@@ -1,0 +1,47 @@
+<!--   
+author:khurshed
+source: jQuery Images Compare
+-->	
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>image compare</title>
+	<link rel="stylesheet" href="css/images-compare.css">
+</head>
+<body>
+<!-- Main div container -->
+<div id="myImageCompare">
+    <!-- The first div will be the front element, to prevent FOUC add a style="display: none;" -->
+    <div style="display: none;">
+    	<span class="images-compare-label">Before</span>
+        <img src="images/before.png" alt="Before">
+    </div>
+    <!-- This div will be the back element -->
+    <div>
+    	<span class="images-compare-label">After</span>
+        <img src="images/after.png" alt="After">
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script type="text/javascript" src="js/jquery.images-compare.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	  // $('#myImageCompare').imagesCompare({
+		   // initVisibleRatio: 0.2,
+		   // interactionMode: "mousemove",
+		  //  addSeparator: false,
+		   // addDragHandle: false,
+		   // animationDuration: 450,
+		   // animationEasing: "linear",
+		   // precision: 2
+		//});
+		$('#myImageCompare').imagesCompare();
+	});
+</script>
+
+</body>
+</html>
